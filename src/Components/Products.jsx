@@ -29,7 +29,7 @@ const Products = () => {
                     </div>
                 </div>
             ))}
-            <ModalProduct itemSelect = {itemSelect}  />
+            <ModalProduct itemSelect = {itemSelect} stockText={stockText} />
         </div>
     )
 }

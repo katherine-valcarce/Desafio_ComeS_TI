@@ -1,10 +1,11 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import addShopping from '../img/add-to-cart.png'
 import '../CSS/ModalProduct.css'
 
 
 const ModalProduct = (props) => {
-    const {itemSelect} = props;
+    const {itemSelect, stockText} = props;
+    const [shoppingCart, setShoppingCart] = useState('0')
     
     return (
         <div>
@@ -20,11 +21,22 @@ const ModalProduct = (props) => {
                             <div className='containerImg'>
                                 {itemSelect.images.map((imageProduct) => (
                                     <img className='productDetailImg'alt='' src={imageProduct.src} />
-                                    
                                 ))}
                                 </div>
-                            
-                            <div id='description' dangerouslySetInnerHTML={{ __html: itemSelect.description }} />
+                            <div className='description' dangerouslySetInnerHTML={{ __html: itemSelect.description }} />
+                            </div>
+                            <div className='containerPriceButton'>
+                                <p className='productPrice'> {stockText(itemSelect.price)} </p>
+                                <div className="qtyOrder">
+                                    <button onClick={() => setShoppingCart(1)} className="btnAR add">            
+                                    +
+                                    </button>
+                                    <div className="textQuantity"> {shoppingCart} </div>
+                                    <button onClick={() => setShoppingCart(0)} className="btnAR remove">
+                                    -
+                                    </button>
+                                </div>
+                                <button className='buttonAddShopping'> <img src={addShopping} className='IconAddShopping' alt='icono agregar al carrito'/> </button>
                             </div>
                         </div>
                     </div>

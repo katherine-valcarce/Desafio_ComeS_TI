@@ -1,37 +1,108 @@
 .modal-body{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto auto ;
-    grid-template-areas: 
-    "x x z z o e i"
-    "x x z z o e i"
-    "x x z z o e i"
-    "x x z z o e i "
-    "x x z y o e i "
-    "x x z y o e i "
-    "x x z y o e i ";
-    ;
-
-    align-items: center;
+    width: 100%;
+    padding: 5%;
+}
+.modal-content{
+    width: 180%;
+    height: 80%;
+    margin: 0px 0px;
 }
 .productDetailImg{
     width: 100%;
     border-radius: 10px;
     margin: 2%;
- 
+}
+.modal-dialog {
+    margin: 2% 15%;
 }
 .containerProductDetail{
-    display: flex;    
+    display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: flex-start;
+    
 }
 .description{
     margin: 2%;
-    padding: 2%;
-    grid-area: y;
+    padding: 3%;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    
 }
 .containerImg{
-    width: 180%;
-    grid-area: x;
+    width: 50%;
 }
 
+.buttonAddShopping{
+    background-color: transparent;
+    border: transparent;
+    width: 50%;
+}
+.IconAddShopping{
+    width: 20%;
+}
+.containerPriceButton{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-items: baseline;
+    top: -10%;
+}
+.qtyOrder{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 1%;
+}
+.btnAR{
+    background-color: #FF9008;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border: transparent;
+    border-radius: 10px;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    .containerProductDetail{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .containerImg {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
+    .productDetailImg{
+        width: 40%;
+        border-radius: 10px;
+        margin: 1%;
+    }
+    .modal-content{
+        width: 100%;
+        
+    }
+    .IconAddShopping{
+        width: 60%;
+    }
+    .qtyOrder{
+        padding: 2%;
+        margin: 2%;
+        width: 40%;
+    }
+    .modal-dialog {
+        margin: 2% 1%;
+    }
+    .textQuantity{
+        margin: 1%;
+    }
+}
