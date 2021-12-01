@@ -1,0 +1,25 @@
+.containerFooter{
+    background-color: #86ca2e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerSocialNetworks{
+    width: 20% ;
+}
+.iconSocialNetworks{
+    width: 20%;
+    margin: 3%;
+    cursor: pointer;
+}
+.containerContacts{
+    margin: 2%;
+}
+.textContacts{
+    color: white;
+
+}
+.li{
+    font-size: 130%;
+}

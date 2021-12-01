@@ -1,0 +1,54 @@
+.containerNavBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0% 2%;
+    margin: 1%;
+    border:  solid 3px #86ca2e;
+    border-radius: 10px;
+}
+.containerCategories{
+    width: 30%;
+}
+.containerBtns{
+    width: 70%;
+}
+.CategoriesBtn{
+    background-color: transparent;
+    border: transparent;
+    color: black;
+    padding: 0.5% 2%;
+    font-weight: 600;
+    font-size: 130%;
+}
+.NavBtns{
+    background-color: transparent;
+    border: transparent;
+    color: black;
+    padding: 0.5% 2%;
+    font-weight: 600;
+    font-size: 130%;
+
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .containerNavBar{
+        display: none;
+    }
+    .containerNavBar{
+        flex-direction: column;
+        position: absolute;
+        background: white;
+        opacity: 0.9;
+        width: 90%;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .containerBtns{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+}
