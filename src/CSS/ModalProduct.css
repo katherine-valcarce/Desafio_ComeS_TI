@@ -1,0 +1,37 @@
+.modal-body{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto ;
+    grid-template-areas: 
+    "x x z z o e i"
+    "x x z z o e i"
+    "x x z z o e i"
+    "x x z z o e i "
+    "x x z y o e i "
+    "x x z y o e i "
+    "x x z y o e i ";
+    ;
+
+    align-items: center;
+}
+.productDetailImg{
+    width: 100%;
+    border-radius: 10px;
+    margin: 2%;
+ 
+}
+.containerProductDetail{
+    display: flex;    
+    flex-direction: row;
+    align-items: flex-start;
+}
+.description{
+    margin: 2%;
+    padding: 2%;
+    grid-area: y;
+}
+.containerImg{
+    width: 180%;
+    grid-area: x;
+}
+

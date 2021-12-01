@@ -11,17 +11,45 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2%;
+    margin: 1%;
     box-shadow: 2px 9px 32px 6px rgba(143,143,143,0.57);
-    border-radius: 10px;
+    border-radius: 12px;
     cursor: pointer;
+    height: 480px;
+    justify-content: space-between;
 }
 .imgProduct{
     width: 350px;
+    border-radius: 12px 12px 0px 0px;
+}
+.selection{
+    background-image: url('../img/lupa.png');
+    background-size: 100%;
+    opacity: 1;
+    border-radius: 12px 12px 0px 0px;
+}
+.imgProduct:hover{
+    opacity: 0.5;
 }
 .productTitle{
     font-family: 'Saira Condensed', sans-serif;
     width: 300px;
     text-align:center;
-    font-size: 150%;
+    font-size: 160%;
+    font-weight: 700;
+}
+.productPrice{
+    font-family: 'Saira Condensed', sans-serif;
+    width: 300px;
+    text-align:center;
+    font-size: 160%;
+    font-weight: 700;
+    color: #86ca2e;
+}
+.containerText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
 }
