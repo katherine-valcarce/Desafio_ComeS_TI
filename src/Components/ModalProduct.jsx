@@ -5,6 +5,7 @@ import '../CSS/ModalProduct.css'
 
 const ModalProduct = (props) => {
     const { itemSelect, stockText } = props;
+    // State para agregar productos al carrito de compras (pendiente programar ADD y REMOVE)
     const [shoppingCart, setShoppingCart] = useState('0')
 
     return (
