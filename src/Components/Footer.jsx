@@ -16,11 +16,11 @@ const footer = () => {
                     <li className='textContacts li'>+56 9 3957 9093</li>
                 </lu>
             </div>
-            
+
             <div className='containerSocialNetworks'>
-                <img className='iconSocialNetworks' src={iconFacebook} alt='icono Facebook'/>
-                <img className='iconSocialNetworks' src={iconInstagram} alt='icono Instagram'/>
-                <img className='iconSocialNetworks' src={iconYoutuve} alt='icono Youtube'/>
+                <img className='iconSocialNetworks' src={iconFacebook} alt='icono Facebook' />
+                <img className='iconSocialNetworks' src={iconInstagram} alt='icono Instagram' />
+                <img className='iconSocialNetworks' src={iconYoutuve} alt='icono Youtube' />
             </div>
 
         </div>

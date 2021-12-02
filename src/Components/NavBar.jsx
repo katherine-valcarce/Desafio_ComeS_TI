@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
         <div className='containerNavBar' id='containerNavBar'>
             <div className='containerCategories'>
-                <Categories/>
+                <Categories />
             </div>
             <div className='containerBtns'>
                 <button className='NavBtns'> Inicio </button>
